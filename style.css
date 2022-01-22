@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  color: #364586;
 }
 
 body {
@@ -11,13 +12,13 @@ body {
   background: rgb(229, 209, 32);
   background: linear-gradient(
     -180deg,
-    rgba(229, 32, 102, 1) 0%,
+    rgb(229, 32, 186) 0%,
     rgba(66, 130, 219, 1) 100%
   );
 }
 
 .culculator {
-  width: 400px;
+  width: 450px;
   background-color: rgba(66, 130, 219, 1);
   padding: 50px 30px;
   position: absolute;
@@ -25,7 +26,7 @@ body {
   top: 50%;
   left: 50%;
   border-radius: 8px;
-  box-shadow: 0 20px 50px #863b7f;
+  box-shadow: 0 20px 50px #364586;
 }
 
 .display {
@@ -34,29 +35,29 @@ body {
 
 .display input {
   width: 100%;
-  padding: 15px 10px;
+  padding: 30px 10px;
   text-align: right;
   border: none;
   background-color: rgba(66, 130, 219, 1);
-  color: rgb(48, 19, 75);
+  color: #364586;
   font-size: 35px;
 }
 
 .display input::placeholder {
-  color: rgb(14, 16, 19);
+  color: #364586;
   opacity: 100%;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 15px;
   margin-top: 40px;
 }
 
 .buttons input[type="button"] {
-  font-size: 20px;
-  padding: 17px;
+  font-size: 25px;
+  padding: 17px 17px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -69,5 +70,5 @@ body {
 
 .buttons input[type="button"]#equal {
   grid-row: span 2;
-  background-color: #db266d;
+  background-color: #b63dc4;
 }
